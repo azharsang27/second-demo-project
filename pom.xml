@@ -26,8 +26,13 @@
       <plugins>
         <plugin>
 			<groupId>org.apache.tomcat.maven</groupId>
-			<artifactId>tomcat7-maven-plugin</artifactId>
+			<artifactId>tomcat8-maven-plugin</artifactId>
 			<version>2.2</version>
+		<configuration>
+   		<url>http://http://3.138.35.10:9000/manager/text</url>
+   		<server>TomcatServer</server>
+   		<path>/second-demo-project</path>
+		  </configuration>
   </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
