@@ -29,18 +29,11 @@
 			<artifactId>tomcat7-maven-plugin</artifactId>
 			<version>2.2</version>
 		<configuration>
-   		<url>http://http://3.138.35.10:9000/manager/text</url>
+   		<url>http://3.138.35.10:9000/manager/text</url>
    		<server>TomcatServer</server>
    		<path>/second-demo-project</path>
 		  </configuration>
   </plugin>
-	<distributionManagement>
-       <repository>
-         <id>internal.repo</id>
-         <name>Internal repo</name>
-         <url>file:///opt/tomcat/apache-tomcat-8.5.69/webapps</url>
-       </repository>
-        </distributionManagement>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
